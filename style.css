@@ -1,0 +1,182 @@
+/* Global defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header panel */
+.lakeos-header {
+    width: 100%;
+    background-color: rgba(50, 50, 50, 0.85); /* grey, slightly transparent */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+/* Logo + text link */
+.logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo {
+    height: 40px;
+    width: auto;
+    margin-right: 12px;
+}
+
+.logo-text {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    color: white;
+}
+
+/* Navigation links */
+.header-nav a {
+    font-family: Arial, sans-serif;
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+    opacity: 0.85;
+    transition: opacity 0.2s ease;
+}
+
+.header-nav a:hover {
+    opacity: 1;
+}
+
+/* Background */
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-image: url('assets/lake-bg.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+
+    /* Center content vertically + horizontally */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    /* Dark overlay for readability */
+    background-color: rgba(0, 0, 0, 0.55);
+    background-blend-mode: darken;
+}
+
+/* Main text style */
+.default {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+
+    /* Spacing + width control */
+    max-width: 720px;
+    margin: 12px 20px;
+    line-height: 1.6;
+
+    /* Better contrast */
+    color: white;
+}
+
+/* Title */
+#title {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 18px;
+    letter-spacing: 1px;
+}
+
+/* Section heading */
+#presentation {
+    font-size: 26px;
+    font-weight: 500;
+    margin-top: 28px;
+    margin-bottom: 12px;
+}
+
+/* Quiet text */
+.quiet {
+    font-size: 13px;
+    color: #bbbbbb;
+    text-align: center;
+    margin-top: 25px;
+    opacity: 0.7;
+    font-style: italic;
+}
+
+.footer {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 40px;
+    opacity: 0.6;
+}
+
+#download {
+    background-color: #4c4c4c;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 0px;
+    cursor: pointer;
+    width: 150px;
+    height: 45px;
+    transition: background-color 0.3s ease;
+}
+#download:hover {
+    background-color: #000000;
+}
+
+#absolutely-nothing {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 18px;
+    background-color: rgb(60, 60, 60);
+    color: rgb(84, 83, 83);
+    width: 400px;
+    height: 100px;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.download-section {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-top: 18px;
+    border: #000000 1px solid;
+    padding: 20px;
+    background-color: rgba(48, 48, 48, 0.633);
+    width: 70%;
+    height: 100px;
+}
+
+#download-title {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    align-self: center;
+}
+
+.download-content {
+    font-size: 14px;
+    margin-top: 8px;
+}
