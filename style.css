@@ -113,10 +113,6 @@ body {
     height: auto;     /* Keeps the aspect ratio perfect */
     display: block;   /* Removes the default inline-block behavior */
     margin: 0 auto;   /* Centers the image if it's smaller than the screen
-
-    /* Spacing + width control */
-    max-width: 720px;
-    margin: 12px 20px;
     line-height: 1.6;
 
     /* Better contrast */
